@@ -8,7 +8,7 @@ Since `npm@3` all modules have been installed in `./node_modules` by default in 
 
 This can make your code fragile when shipping into environments which may install modules differently, or if unrelated changes to your dependency tree cause a module to no longer be available.
 
-The solution
+## The solution
 
 In order to avoid this, `strict-require` wraps `require` calls in a check in the local package.json file to ensure a module has been explicitly depended on before allowing it to be `require`-ed.
 
