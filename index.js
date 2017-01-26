@@ -34,7 +34,7 @@ module.exports = {
   },
   warn: () => {
     patch((name, pkg) => {
-      console.warn(`Attempted to load module ${name}, which is not defined as a dependency in ${pkg}`);
+      console.error(`Attempted to load module ${name}, which is not defined as a dependency in ${pkg}`);
     });
   }
 };
